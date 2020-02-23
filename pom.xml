@@ -1,0 +1,48 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+	<groupId>ch.gibb.bomberman.component</groupId>
+	<artifactId>application.highscore</artifactId>
+	<version>1.0.2-SNAPSHOT</version>
+	<packaging>jar</packaging>
+
+	<name>highscore</name>
+	<url>http://maven.apache.org</url>
+
+	<properties>
+		<app.version>1.0.0</app.version>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<junit.version>4.11</junit.version>
+		<hibernate.version>5.2.4.Final</hibernate.version>
+	</properties>
+
+	<build>
+		<finalName>${project.artifactId}-${app.version}</finalName>
+	</build>
+
+	<scm>
+		<connection>scm:git:https://bitbucket.org/bomberman-team/application.highscore.git</connection>
+		<developerConnection>scm:git:https://bitbucket.org/bomberman-team/application.highscore.git</developerConnection>
+		<url>http://www.thomaspauli.ch</url>
+	  <tag>HEAD</tag>
+  </scm>
+
+	<dependencies>
+		<dependency>
+			<groupId>junit</groupId>
+			<artifactId>junit</artifactId>
+			<version>${junit.version}</version>
+			<scope>test</scope>
+		</dependency>
+		<dependency>
+			<groupId>org.hibernate</groupId>
+			<artifactId>hibernate-core</artifactId>
+			<version>${hibernate.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>com.h2database</groupId>
+			<artifactId>h2</artifactId>
+			<version>1.4.191</version>
+		</dependency>
+	</dependencies>
+</project>
